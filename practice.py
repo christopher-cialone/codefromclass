@@ -22,16 +22,26 @@ set of steps to be followed during problem solving in software or hardware routi
 # n = len(array)
    # return the element in the given array at the given index
  #get_element_at_index([1,2,3,4,5],3):
- def  get_index_at_element(array, goal_element):
-     for i in range(len(array)):
-         if array[i] == goal_element:
-         return i # 0(1)
- # If we are looping through n times, its Time Complexity is Big O of n
- def get_products(array):
-    products = []
-    for x in array:
+#  def  get_index_at_element(array, goal_element):
+#      for i in range(len(array)):
+#          if array[i] == goal_element:
+#          return i # 0(1)
+#  # If we are looping through n times, its Time Complexity is Big O of n
+#  def get_products(array):
+#     products = []
+#     for x in array:
 
-        for y in array:
-            products.append(x * y)
+#         for y in array:
+#             products.append(x * y)
 
-    return products   
+#     return products   
+
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        left = 0
+        right = len(s) - 1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
+
