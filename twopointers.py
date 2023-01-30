@@ -1,49 +1,25 @@
-   # Input: s = ['h', 'e', 'l', 'l', 'o']
-   # Output: ['o', 'l', 'l', 'e', 'h']
+#class Solution:
+#     function isPalindrome(s):
+#         s = concatenate lowercase alphanumeric characters from s
+#         return s is equal to its reverse
 
+# s = create an instance of Solution
+# input_string = "A man, a plan, a canal: Panama"
+# if isPalindrome of input_string is true:
+#     print input_string is a palindrome
+# else:
+#     print input_string is not a palindrome
 
 class Solution:
-    def reverseString(self, s: List[str]) -> None:
-        n =len(s)
-        i = 0
-        j = n-1
+    def isPalindrome(self, s: str) -> bool:
+        s = "".join(char.lower() for char in s if char.isalnum()) # O(n) 
+        return s == s[::-1] # the s[::-1] slicing takes O(n)
 
-        while i < n/2:
-            print(i, j, n//2)
-            i+=1
-            j-=1
-
-            #while i < n/2:
-            for i in range(n/2):
-                print(i, j)
-                s[i], s[j] = s[j], s[i]
-                print(s)
-                i+=1
-                j-=1
-                #longer solution
-                #temp = s[i]
-                #s[i] = s[j]
-                #s[j] = temp
-        """
-        Do not return anything, modify s in-place instead.
-        """
-        # Input: s = ['h', 'e', 'l', 'l', 'o']
-        # Output: ['o', 'l', 'l', 'e', 'h']
-        '''
-        one pointr at the beginnning of the list, one point at the end of the list
-        while loop
-        loop through n/2
-        take pointer i, and switch that element with the one at pointer
-        increase point i, decrease point j
-        return the answer
-        '''
-
-
-# class Solution:
-#     def reverseString(self, s: List[str]) -> None:
-#         left = 0
-#         right = len(s) - 1
-#         while left < right:
-#             s[left], s[right] = s[right], s[left]
-#             left += 1
-#             right -= 1
+s = Solution() # O(1)
+input_string = "A man, a plan, a canal: Panama" # O(1), 
+if s.isPalindrome(input_string): # 0(n), -if statement: O(1))
+    print(f"'{input_string}' is a palindrome.") # O(1)
+else:
+    print(f"'{input_string}' is not a palindrome.") # O(1)
+    # Entire Solution: O(n) 
+  
