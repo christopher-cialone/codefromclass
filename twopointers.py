@@ -22,4 +22,15 @@ if s.isPalindrome(input_string): # 0(n), -if statement: O(1))
 else:
     print(f"'{input_string}' is not a palindrome.") # O(1)
     # Entire Solution: O(n) 
+
+    '''
+    The isalnum() method in the code is a built-in Python method that checks
+    if a character is alphanumeric. It returns True if the character is alphanumeric 
+    (i.e. a letter or a digit) and False otherwise.
+
+    In the code, it's used to filter the characters in the s string, keeping only the
+    alphanumeric characters and discarding all other characters (e.g. punctuation marks,
+    spaces, etc.). The filtered characters are then joined into a single string using the
+    join method.
+    '''
   
