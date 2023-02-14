@@ -1,17 +1,37 @@
 class Solution:
     def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
 
+
+
+    a_list = [5,4,3,2,1]
+    b_list = [5,4,3,2,1]
+    a_list.sort()
+    print('after using sort()', a_list)
+
+    new_list = sorted(b_list)
+    print('after using sorted()', b_list, new_list)
+
 def sortPeople(names, heights):
 
-    
+    height_dict = dict(zip(heights, names))
+    results = []
+    print(height_dict)
+
+sortPeople(["a", "b", "c"], [1, 3, 2])
+
+
+
     # one thing I want to stress is keeping the name and ehights together 
 
     # pseudocode:
-
     # use a dictionary to make sure names and heights stay associated with each other
-    # make a dict and put our two lists into it
+    # make a dictionary and put our two lists into it
+    # place names and heights into dictionary
     # make result list
-    # 
+    # sort our dictionary
+    # for loop
+        # add names to our result list, in order of the new sorted heights
+
 
         '''
         You are given an array of strings names, and an array heights that consists of distinct 
