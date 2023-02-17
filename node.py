@@ -23,3 +23,10 @@ for i in range(5):
 # of each node i the list in order
 
 # head_node
+
+def print_list_values(head):
+    current_node = head
+
+    while current_node.next != None: # true for every node until the end
+        print(current_node.val)
+        current_node = current_node.next 
