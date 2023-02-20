@@ -39,9 +39,6 @@ print(rc.ping(3001)) # Output: 3
 print(rc.ping(3002)) # Output: 3
 
 
-
-
-
 # Your RecentCounter object will be instantiated and called as such:
 # obj = RecentCounter()
 # param_1 = obj.ping(t)
