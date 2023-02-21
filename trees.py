@@ -14,6 +14,7 @@ class BinaryTreeNode:
         self.val = value
         self.left = None
         self.right = None
+        #self.neighbors = []
 
 root =  BinaryTreeNode(10)
 root_left = BinaryTreeNode(11)
@@ -21,3 +22,6 @@ root_right = BinaryTreeNode(-3)
 
 root.left = root.left
 root.right = root.right
+
+
+class Solution
