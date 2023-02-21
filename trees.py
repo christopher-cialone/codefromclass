@@ -23,5 +23,3 @@ root_right = BinaryTreeNode(-3)
 root.left = root.left
 root.right = root.right
 
-
-class Solution
