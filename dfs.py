@@ -7,7 +7,7 @@ class TreeNode:
 
 
 class Solution:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def preorderTraversal(self, root) -> list[int]:
         
         self.result = []
 
@@ -24,4 +24,6 @@ class Solution:
         if node == None:
             return
         self.result.append(node.val)
-        traverse(node.left)
+        self.traverse(node.left)
+        self.traverse(node.right)
+        
