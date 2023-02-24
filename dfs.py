@@ -10,7 +10,7 @@ class Solution:
     def preorderTraversal(self, root) -> list[int]:
         
         self.result = []
-
+        self.traverse(root)
         return self.result
 
     def traverse(self, node):
