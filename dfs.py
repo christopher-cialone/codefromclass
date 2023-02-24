@@ -9,7 +9,7 @@ class TreeNode:
 class Solution:
     def preorderTraversal(self, root) -> list[int]:
         
-        self.result = []
+        self.result = [] #O(1)
         self.traverse(root)
         return self.result
 
